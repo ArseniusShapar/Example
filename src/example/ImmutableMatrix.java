@@ -1,14 +1,6 @@
-public class ImmutableMatrix extends Matrix {
-    private double[][] secureCopy(double[][] array) {
-        int height = super.getHeight();
-        int width = super.getWidth();
-        double[][] copyArray = new double[height][width];
-        for (int i = 0; i < height; i++) {
-            System.arraycopy(array[i], 0, copyArray[i], 0, width);
-        }
-        return copyArray;
-    }
+package example;
 
+public class ImmutableMatrix extends Matrix {
     public ImmutableMatrix() {
         super();
     }
